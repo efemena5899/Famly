@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Account</title>
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="logo" aria-hidden="true">F</div>
+    <h1>Join us</h1>
+    <p class="sub">Create your account</p>
+
+    <form id="registerForm" novalidate>
+      <div class="field">
+        <div class="label-row">
+          <label for="name">Full Name</label>
+        </div>
+        <input id="name" name="name" type="text" placeholder="John Doe" required />
+      </div>
+
+      <div class="field">
+        <div class="label-row">
+          <label for="email">Email</label>
+        </div>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="field">
+        <div class="label-row">
+          <label for="password">Password</label>
+        </div>
+        <input id="password" name="password" type="password" minlength="6" placeholder="••••••••" required />
+      </div>
+
+      <div class="error" id="error" role="alert" aria-live="polite"></div>
+
+      <button class="primary" type="submit" id="submitBtn">Sign up</button>
+
+      <hr class="divider" />
+      <p class="alt">Already have an account? <a href="/login.html">Sign in</a></p>
+    </form>
+
+    <footer>By continuing, you agree to our <a href="/terms">Terms</a> &amp; <a href="/privacy">Privacy</a>.</footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
